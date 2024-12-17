@@ -1,0 +1,215 @@
+/* Container */
+.e-event-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96%;
+    padding: 30px;
+    background-color: #eaf6f6;
+    min-height: 100vh; /* Ensure it covers the full height */
+  }
+  
+  /* Individual Event Container */
+  .e-event-container {
+    background-color: #ffffff;
+    padding: 30px;
+    max-width: 600px; /* Set a max width for better layout control */
+    margin: 20px auto; /* Center the container */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+  
+  /* Header Tabs */
+  .e-event-header {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increase gap for better spacing */
+    margin-bottom: 30px; /* Increase space below header */
+  }
+  
+  .e-tab {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 10px 20px; /* Add more padding for a better button feel */
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .e-tab.active {
+    background-color: #f8c694;
+    border: none;
+    font-weight: 600; /* Slightly bolder text for the active tab */
+    color: #fff; /* Change text color when active */
+  }
+  
+  .e-tab:hover {
+    background-color: #f1e0b4; /* Light hover effect */
+  }
+  
+  /* Form */
+  .e-event-form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increase gap for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Event Icon */
+  /* Event Icon (File Input) */
+.e-event-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc; /* Dashed border for visual cue */
+  }
+  
+  .e-event-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure image fits nicely inside the container */
+    border-radius: 8px;
+  }
+  
+  .file-input-label {
+    cursor: pointer;
+    color: #007bff;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .file-input {
+    display: none; /* Hide default file input */
+  }
+  
+  .file-input-label:hover {
+    text-decoration: underline;
+  }
+  
+  /* Other Event Form Styles (as in the previous version) */
+  .e-event-form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .e-event-input,
+  .e-event-textarea {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .e-save-btn {
+    background-color: #8c5e2b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .e-save-btn:hover {
+    background-color: #6b4620;
+    transform: scale(1.05); /* Add subtle scaling on hover */
+  }
+  
+  
+  /* Input Fields */
+  .e-event-input{
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 16px;
+        max-width: 96%;
+        color: #333;
+        transition: all 0.3s ease;
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  .e-event-textarea {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .e-event-input:focus,
+  .e-event-textarea:focus {
+    border-color: #f8c694;
+    outline: none; /* Remove outline on focus */
+  }
+  
+  /* Textarea */
+  .e-event-textarea {
+    resize: none;
+    height: 120px; /* Increase height for better readability */
+  }
+  
+  /* Save Button */
+  .e-save-btn {
+    background-color: #8c5e2b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+  }
+  
+  .e-save-btn:hover {
+    background-color: #6b4620;
+    transform: scale(1.05); /* Add subtle scaling on hover */
+  }
+  
+  /* Optional: Add media queries for responsiveness */
+  @media (max-width: 768px) {
+    .e-event-container {
+      max-width: 90%;
+    }
+  
+    .e-tab {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+  
+    .e-event-form {
+      padding: 20px;
+    }
+  
+    .e-save-btn {
+      padding: 12px;
+    }
+  }
+  

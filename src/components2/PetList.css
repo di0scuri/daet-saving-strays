@@ -1,0 +1,132 @@
+.pet-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 97%;
+    padding: 20px;
+    background-color: #eaf6f6;
+  }
+  
+  .pet-count {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin: 40px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40%;
+  }
+  
+  .pet-count-number {
+    font-size: 48px;
+    color: #f4a261;
+  }
+  
+  .pet-count-text {
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .pet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .pet-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .pet-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pet-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .pet-buttons button {
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  .pl-edit-btn {
+    background-color: #d1d5db;
+  }
+  
+  .pl-delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
+  .pl-add-pet-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    height: 230px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #999;
+  }
+  
+  .pl-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .pl-modal {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 450px;
+  }
+  
+  .pl-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+  }
+  
+  .pl-modal-content input,
+  .pl-modal-content textarea {
+    margin-top: 8px;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  .pl-save-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+  }
+  

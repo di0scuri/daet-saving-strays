@@ -1,0 +1,190 @@
+/* Header Section */
+.adoption-header {
+  background-image: url('../assets/adoptbg.png'); /* Replace with the correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.adoption-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.adoption-header p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+/* Cards Section */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f5f2;
+}
+
+/* Selected Card Styles */
+.card-selected {
+  background-color: #d8a97d; /* Light brown */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: white
+  
+}
+
+/* When the card is selected, text will become white */
+/* When the card is selected, text will become white */
+.card-selected .card-name,
+.card-selected .card-description,
+.card-selected .card-story {
+  color: white !important; /* Use !important to force the color to be white */
+}
+
+/* Default state when card is not selected */
+.card .card-name,
+.card .card-description,
+.card .card-story {
+  color: #333 !important; /* Default text color is black */
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+  background-color: #d8a97d;
+  color: white;
+}
+
+.card-selected .adopt-button {
+  background-color: #ff914d; /* Button color stays consistent */
+  color: white;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card-name {
+  font-size: 1.5rem;
+  color: #6b4f35; /* Default card text color */
+  margin: 0.5rem 0;
+}
+
+.card-description {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444; /* Default text color */
+}
+
+.card-story {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 1rem 0;
+}
+
+.adopt-button {
+  background-color: #ff914d;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.adopt-button:hover {
+  background-color: #e57c3a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .adoption-header h1 {
+    font-size: 2rem;
+  }
+
+  .adoption-header p {
+    font-size: 1rem;
+  }
+}
+
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.modal-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.modal-header p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  margin-top: 0.5rem; /* Adjust as needed */
+}
+
+.form-group {
+  margin: 1rem 0;
+}
+
+.form-group:first-of-type {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.confirm-btn, .close-btn {
+  margin-top: 1rem;
+}
